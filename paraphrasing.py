@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""the program will take a processed textfile as input, the file should have every sentence in a new line
+"""
+Author: Anubhav
+Date: 29.01.2020
 
-Returns:
-    [type] -- [description]
+The program will take a processed textfile as input, the file should have every sentence in a new line
 """
 import os.path
 from json import loads
@@ -141,7 +142,7 @@ def main():
     """main function the program starts
     """
     print("Quillbot Paraphrasing tool.")
-    filepath = input("Enter relative path of the formated text file: ")
+    filepath = input("Enter the path of the formated text file: ")
     openfile(filepath)
 
 
