@@ -8,3 +8,5 @@ Then the paraphrasing tool will read line by line and it will get multiple alter
 Finally it will produce a word document file containing the original text followed by the alternatives.
 
 The word document will be saved in the current directory and it will have the same name of the formatted text file.
+
+In the File Samples folder, there are some files to refer to. 
