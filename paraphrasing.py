@@ -5,8 +5,8 @@ Date: 29.01.2020
 
 The program will take a processed textfile as input, the file should have every sentence in a new line
 
-Login Info to get cookies
-https://quillbot.com/
+Login info to get cookies:
+Url: https://quillbot.com/
 Email: prinusam.roy.9e@819760.com
 Password: password
 """
@@ -69,7 +69,7 @@ def openfile(filepath):
 
     filepath = filepath.rstrip()
     filesave = os.path.split(filepath)[-1]
-    filesave = ([filename.strip() for filename in filesave.split('.')][-2] + " - draft")
+    filesave = "Drafts/" + ([filename.strip() for filename in filesave.split('.')][-2] + " - draft")
 
     cur_path = os.path.dirname(__file__)
     textfile = os.path.relpath(filepath, cur_path)
@@ -134,7 +134,7 @@ def paraphrasor(url, session):
         DOC.add_paragraph("Alternative Texts:")
 
         print("_" * 90, "\n")
-        DOC.add_paragraph("_" * 90)
+        DOC.add_paragraph("_" * 105)
         # DOC.add_paragraph()
 
         for text in texts:
@@ -143,13 +143,14 @@ def paraphrasor(url, session):
 
         print("#" * 90)
         DOC.add_paragraph("#" * 63)
+        DOC.add_page_break()
 
 
 def main():
     """main function the program starts
     """
-    print("Quillbot Paraphrasing tool.")
-    filepath = input("Enter the path of the formated text file: ")
+    print("Quillbot Paraphrasing Tool")
+    filepath = input("Enter the path of the formatted text file: ")
     openfile(filepath)
 
 
